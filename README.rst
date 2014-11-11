@@ -9,10 +9,11 @@ Setup
 
 Clone this repository into home directory::
 
-  git clone http://github.com/mhaig/vimuser-mhaig.git
+  git clone http://github.com/mhaig/vimuser-mhaig.git ~/.vimuser
 
 Clone jszakmeister's customizations into home directory::
 
-  git clone https://github.com/jszakmeister/vimuser-jszakmeister.git
+  git clone https://github.com/jszakmeister/vimuser-jszakmeister.git \
+  ~/.vimuser-jszakmeister
 
 Enjoy!
