@@ -50,16 +50,6 @@ command! -bar SetupRstSyntax call CustomSetupRstSyntax()
 " Autocommands
 " =============================================================
 
-augroup mhaig_vimrc
-    " Switch between snippet and python files.
-    autocmd BufEnter *.snippets let b:fswitchdst = 'snippets.py'
-    autocmd BufEnter *.snippets let b:fswitchlocs = '.'
-
-    " Switch between python file and generated snippet file.
-    autocmd BufEnter *.snippets.py let b:fswitchdst = 'snippets'
-    autocmd BufEnter *.snippets.py let b:fswitchlocs = '.'
-    autocmd BufEnter *.snippets.py let b:fswitchfnames = '/.snippets$//'
-augroup END
 
 " =============================================================
 " Commands
