@@ -49,7 +49,7 @@ command! -bar SetupRstSyntax call CustomSetupRstSyntax()
 function! CustomSetupRuby()
     call SetupRuby()
 
-    " setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+    setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
     Highlight nolonglines
 
     " Enable optional snippets for Ruby support.
