@@ -9,5 +9,7 @@ if !(g:Platform == "darwin")
     let g:FontSize = 14
 endif
 
+let g:EnablePowerline = 1
+
 " Unlet mapleader to prevent using ',' as the mapleader.
 unlet! mapleader

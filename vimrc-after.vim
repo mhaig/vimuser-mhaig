@@ -46,6 +46,17 @@ function! CustomSetupRstSyntax()
 endfunction
 command! -bar SetupRstSyntax call CustomSetupRstSyntax()
 
+function! CustomSetupRuby()
+    call SetupRuby()
+
+    " setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+    Highlight nolonglines
+
+    " Enable optional snippets for Ruby support.
+    call pathogen#surround(expand('$VIMFILES/optional-bundle/snippets'))
+endfunction
+command! -bar SetupRuby call CustomSetupRuby()
+
 " =============================================================
 " Autocommands
 " =============================================================
