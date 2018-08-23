@@ -37,13 +37,8 @@ directory if necessary.
 
     copy vimfiles\home.vimrc _vimrc
 
-* Next grab this repository::
+* Then grab this repository::
 
     svn co https://github.com/mhaig/vimuser-mhaig.git/trunk _vimuser
-
-* Finally, grab jszakmeister's customizations::
-
-    svn co https://github.com/jszakmeister/vimuser-jszakmeister.git/trunk \
-    _vimrc-jszakmeister
 
 Enjoy!
