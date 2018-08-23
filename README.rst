@@ -7,13 +7,16 @@ https://github.com/drmikehenry/vimfiles
 Setup
 -----
 
-Clone this repository into home directory::
+This configuration builds on top of Dr. Mike's vimfiles configuration.  To setup
+everything, you need to first clone Dr. Mike's configuration to `~/.vim` and run
+the `setup.py` file::
 
-  git clone http://github.com/mhaig/vimuser-mhaig.git ~/.vimuser
+    git clone https://github.com/drmikehenry/vimfiles.git ~/.vim
+    cd ~/.vim
+    python setup.py
 
-Clone jszakmeister's customizations into home directory::
+then clone this repository into `~/.vimuser`::
 
-  git clone https://github.com/jszakmeister/vimuser-jszakmeister.git \
-  ~/.vimuser-jszakmeister
+  git clone https://github.com/mhaig/vimuser-mhaig.git ~/.vimuser
 
 Enjoy!
