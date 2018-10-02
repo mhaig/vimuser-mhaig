@@ -21,8 +21,26 @@ let &showbreak = '↳   '
 " into every buffer.
 sign define _hidden
 
+function! ReloadColorScheme()
+    redir => current_scheme
+    colorscheme
+    redir END
+
+    let current_scheme = xolox#misc#str#trim(current_scheme)
+
+    execute 'colorscheme ' . current_scheme
+endfunction
+
 augroup mhaig_vimrc
     autocmd!
+
+    if has("nvim") && $NVIM_TUI_ENABLE_TRUE_COLOR != ""
+        " Neovim has a few issues when it comes to colorschemes right now.  The
+        " main one being is that some of the terminal support bits don't come
+        " until much later, for truecolor support.  So you need to reload the
+        " colorscheme to have it take effect.
+        autocmd VimEnter * nested call ReloadColorScheme()
+    endif
 
     " Make sure the sign column is always present.
     autocmd BufEnter *
